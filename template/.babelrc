@@ -1,5 +1,13 @@
 {
   "presets": [
-    ["es2015", { "modules": false }]
-  ]
+    ["es2015", { "modules": false }],
+    "stage-3"
+  ],
+  "plugins": ["syntax-dynamic-import", "transform-runtime", "transform-object-assign"],
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    }
+  }
 }
